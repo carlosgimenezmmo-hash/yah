@@ -56,7 +56,7 @@ export default function LandingPage() {
         <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
          <button onClick={() => window.open("https://vivienda-ya.vercel.app/registro", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "1px solid rgba(34,197,94,0.4)", background: "transparent", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "inherit", color: "#16a34a" }}>🏠 ViviendaYa</button>
 <button onClick={() => window.open("https://rodadosya.vercel.app/registro", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "none", background: "#3B82F6", color: "#fff", fontSize: 14, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>🚗 RodadosYa</button> 
-          n>
+
         </div>
       </nav>
 
