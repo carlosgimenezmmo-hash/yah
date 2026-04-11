@@ -3,8 +3,8 @@ import { useRouter } from "next/navigation"
 import { useState, useEffect } from "react"
 
 const apps = [
-  { nombre: "ViviendaYa", descripcion: "Compra, alquila y vende propiedades con videos reales", color: "#22C55E", bg: "rgba(34,197,94,0.1)", border: "rgba(34,197,94,0.25)", emoji: "🏠", href: "/feed", disponible: true },
-  { nombre: "RodadosYa", descripcion: "Compra y vende autos, motos y vehiculos", color: "#3B82F6", bg: "rgba(59,130,246,0.1)", border: "rgba(59,130,246,0.25)", emoji: "🚗", href: "#", disponible: false },
+  { nombre: "ViviendaYa", descripcion: "Compra, alquila y vende propiedades con videos reales", color: "#22C55E", bg: "rgba(34,197,94,0.1)", border: "rgba(34,197,94,0.25)", emoji: "🏠", href: "https://vivienda-ya.vercel.app", disponible: true },
+  { nombre: "RodadosYa", descripcion: "Compra y vende autos, motos y vehiculos", color: "#3B82F6", bg: "rgba(59,130,246,0.1)", border: "rgba(59,130,246,0.25)", emoji: "🚗", href: "https://rodadosya.vercel.app", disponible: true },
   { nombre: "CocinaYa", descripcion: "Recetas, productos y servicios gastronomicos", color: "#F97316", bg: "rgba(249,115,22,0.1)", border: "rgba(249,115,22,0.25)", emoji: "🍳", href: "#", disponible: false },
 ]
 
@@ -262,6 +262,8 @@ export default function LandingPage() {
     </div>
   )
 }
+
+
 
 
 
