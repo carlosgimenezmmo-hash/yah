@@ -72,8 +72,8 @@ export default function LandingPage() {
           Donde podes encontrar la propiedad que buscas, para comprar, vender, alquilar o permutar. Con ubicacion real verificada por ARRYSE para evitar estafas.
         </p>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "center", marginBottom: 60 }}>
-          <button onClick={() => router.push("/registro")} style={{ padding: "16px 32px", borderRadius: 14, border: "none", background: "#22C55E", color: "#fff", fontSize: 17, fontWeight: 800, cursor: "pointer", fontFamily: "inherit", boxShadow: "0 4px 24px rgba(34,197,94,0.35)" }}>Empezar gratis</button>
-          <button onClick={() => router.push("/feed")} style={{ padding: "16px 32px", borderRadius: 14, border: "1px solid rgba(0,0,0,0.12)", background: "#fff", color: "#0a0a0a", fontSize: 17, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>Ver propiedades</button>
+          <button onClick={() => window.open("https://vivienda-ya.vercel.app/registro", "_blank")} style={{ padding: "16px 32px", borderRadius: 14, border: "none", background: "#22C55E", color: "#fff", fontSize: 17, fontWeight: 800, cursor: "pointer", fontFamily: "inherit", boxShadow: "0 4px 24px rgba(34,197,94,0.35)" }}>Empezar gratis</button>
+          <button onClick={() => window.open("https://vivienda-ya.vercel.app/feed", "_blank")} style={{ padding: "16px 32px", borderRadius: 14, border: "1px solid rgba(0,0,0,0.12)", background: "#fff", color: "#0a0a0a", fontSize: 17, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>Ver propiedades</button>
           <button onClick={() => setShowInstall(true)} style={{ padding: "16px 32px", borderRadius: 14, border: "1px solid rgba(34,197,94,0.4)", background: "rgba(34,197,94,0.06)", color: "#16a34a", fontSize: 17, fontWeight: 700, cursor: "pointer", fontFamily: "inherit", display: "flex", alignItems: "center", gap: 8 }}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Instalar app
@@ -173,7 +173,7 @@ export default function LandingPage() {
                     </div>
                   ))}
                 </div>
-                <button onClick={() => router.push(plan.precio === "0" ? "/registro" : "/planes")} style={{ width: "100%", padding: "12px", borderRadius: 12, border: "none", background: plan.color, color: "#fff", fontSize: 14, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>
+                <button onClick={() => window.open(plan.precio === "0" ? "https://vivienda-ya.vercel.app/registro" : "https://vivienda-ya.vercel.app/planes", "_blank")} style={{ width: "100%", padding: "12px", borderRadius: 12, border: "none", background: plan.color, color: "#fff", fontSize: 14, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>
                   {plan.precio === "0" ? "Empezar gratis" : "Contratar"}
                 </button>
               </div>
@@ -190,7 +190,7 @@ export default function LandingPage() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
             {apps.map((app) => (
-              <div key={app.nombre} onClick={() => app.disponible && router.push(app.href)} style={{ padding: 28, borderRadius: 20, border: `1px solid ${app.border}`, background: app.bg, cursor: app.disponible ? "pointer" : "default", position: "relative", opacity: app.disponible ? 1 : 0.6 }}>
+              <div key={app.nombre} onClick={() => app.disponible && appwindow.open(app.href, "_blank") } style={{ padding: 28, borderRadius: 20, border: `1px solid ${app.border}`, background: app.bg, cursor: app.disponible ? "pointer" : "default", position: "relative", opacity: app.disponible ? 1 : 0.6 }}>
                 {!app.disponible && (
                   <span style={{ position: "absolute", top: 16, right: 16, background: "rgba(0,0,0,0.08)", borderRadius: 20, padding: "3px 10px", fontSize: 11, fontWeight: 700, color: "#6B7280" }}>Proximamente</span>
                 )}
@@ -206,7 +206,7 @@ export default function LandingPage() {
       <section style={{ padding: "80px 24px", background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)", textAlign: "center" }}>
         <h2 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 900, letterSpacing: -1, color: "#fff", margin: "0 0 16px" }}>Empieza hoy, es gratis</h2>
         <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 17, margin: "0 0 40px" }}>Instala ViviendaYa en tu celular y publica tu primera propiedad en minutos.</p>
-        <button onClick={() => router.push("/registro")} style={{ padding: "18px 40px", borderRadius: 14, border: "none", background: "#22C55E", color: "#fff", fontSize: 18, fontWeight: 800, cursor: "pointer", fontFamily: "inherit", boxShadow: "0 4px 24px rgba(34,197,94,0.4)" }}>Crear cuenta gratis</button>
+        <button onClick={() => window.open("https://vivienda-ya.vercel.app/registro", "_blank")} style={{ padding: "18px 40px", borderRadius: 14, border: "none", background: "#22C55E", color: "#fff", fontSize: 18, fontWeight: 800, cursor: "pointer", fontFamily: "inherit", boxShadow: "0 4px 24px rgba(34,197,94,0.4)" }}>Crear cuenta gratis</button>
       </section>
       {showInstall && (
         <div style={{ position: "fixed", inset: 0, zIndex: 100, display: "flex", alignItems: "flex-end", justifyContent: "center", background: "rgba(0,0,0,0.5)" }} onClick={() => setShowInstall(false)}>
@@ -253,8 +253,8 @@ export default function LandingPage() {
         <div style={{ maxWidth: 1000, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
           <span style={{ fontSize: 20, fontWeight: 900, color: "#fff" }}>Yah<span style={{ color: "#22C55E" }}>!</span></span>
           <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
-            <span onClick={() => router.push("/feed")} style={{ color: "rgba(255,255,255,0.4)", fontSize: 14, cursor: "pointer" }}>ViviendaYa</span>
-            <span onClick={() => router.push("/planes")} style={{ color: "rgba(255,255,255,0.4)", fontSize: 14, cursor: "pointer" }}>Planes</span>
+            <span onClick={() => window.open("https://vivienda-ya.vercel.app/feed", "_blank")} style={{ color: "rgba(255,255,255,0.4)", fontSize: 14, cursor: "pointer" }}>ViviendaYa</span>
+            <span onClick={() => window.open("https://vivienda-ya.vercel.app/planes", "_blank")} style={{ color: "rgba(255,255,255,0.4)", fontSize: 14, cursor: "pointer" }}>Planes</span>
             <span style={{ color: "rgba(255,255,255,0.4)", fontSize: 14 }}>Tres Arroyos, Buenos Aires</span>
           </div>
         </div>
