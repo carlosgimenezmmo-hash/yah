@@ -190,7 +190,7 @@ export default function LandingPage() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
             {apps.map((app) => (
-              <div key={app.nombre} onClick={() => app.disponible && window.open(app.href, "_blank") } style={{ padding: 28, borderRadius: 20, border: `1px solid ${app.border}`, background: app.bg, cursor: app.disponible ? "pointer" : "default", position: "relative", opacity: app.disponible ? 1 : 0.6 }}>
+              <div key={app.nombre} onClick={() => app.disponible && window.location.href = app.href } style={{ padding: 28, borderRadius: 20, border: `1px solid ${app.border}`, background: app.bg, cursor: app.disponible ? "pointer" : "default", position: "relative", opacity: app.disponible ? 1 : 0.6 }}>
                 {!app.disponible && (
                   <span style={{ position: "absolute", top: 16, right: 16, background: "rgba(0,0,0,0.08)", borderRadius: 20, padding: "3px 10px", fontSize: 11, fontWeight: 700, color: "#6B7280" }}>Proximamente</span>
                 )}
