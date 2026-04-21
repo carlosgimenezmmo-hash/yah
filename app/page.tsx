@@ -1,5 +1,5 @@
 ﻿"use client"
-import { useRouter } from "next/navigation"
+
 import { useState, useEffect } from "react"
 
 const apps = [
@@ -23,15 +23,10 @@ const planes = [
 ]
 
 export default function LandingPage() {
-  const router = useRouter()
+  
   const [scrolled, setScrolled] = useState(false)
 
-  useEffect(() => {
-    if (window.matchMedia("(display-mode: standalone)").matches) {
-      router.replace("/feed")
-    }
-  }, [])
-
+ 
   const [showInstall, setShowInstall] = useState(false)
   const [os, setOs] = useState("desktop")
 
