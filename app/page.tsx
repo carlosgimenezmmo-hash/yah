@@ -45,12 +45,12 @@ export default function LandingPage() {
 
   return (
     <div style={{ background: "#fff", color: "#0a0a0a", fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif", overflowX: "hidden" }}>
-
       <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 50, padding: "0 24px", height: 64, display: "flex", alignItems: "center", justifyContent: "space-between", background: scrolled ? "rgba(255,255,255,0.95)" : "transparent", backdropFilter: scrolled ? "blur(12px)" : "none", borderBottom: scrolled ? "1px solid rgba(0,0,0,0.08)" : "none", transition: "all 0.3s" }}>
         <span style={{ fontSize: 22, fontWeight: 900, letterSpacing: -0.5 }}>Yah<span style={{ color: "#22C55E" }}>!</span></span>
         <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-        <button onClick={() => window.open("https://vivienda-ya.vercel.app", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "1px solid rgba(34,197,94,0.4)", background: "transparent", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "inherit", color: "#16a34a" }}>🏠 ViviendaYa</button>
-<
+          <button onClick={() => window.open("https://vivienda-ya.vercel.app", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "1px solid rgba(34,197,94,0.4)", background: "transparent", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "inherit", color: "#16a34a" }}>🏠 ViviendaYa</button>
+          <button onClick={() => window.open("/ViviendaYa.apk", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "none", background: "#22C55E", color: "#fff", fontSize: 14, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>📲 Instalar App</button>
+        </div>
       </nav>
 
       <section style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "100px 24px 60px", textAlign: "center", background: "linear-gradient(180deg, #f0fdf4 0%, #fff 60%)" }}>
