@@ -51,7 +51,11 @@ export default function LandingPage() {
         <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
          <button onClick={() => window.open("https://vivienda-ya.vercel.app/registro", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "1px solid rgba(34,197,94,0.4)", background: "transparent", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "inherit", color: "#16a34a" }}>🏠 ViviendaYa</button>
 <button onClick={() => window.open("https://rodadosya.vercel.app/registro", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "none", background: "#3B82F6", color: "#fff", fontSize: 14, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>🚗 RodadosYa</button> 
-
+<button 
+  onClick={() => window.open("/viviendaya.apk", "_blank")} 
+  style={{ padding: "8px 18px", borderRadius: 20, border: "1px solid rgba(34,197,94,0.4)", background: "rgba(34,197,94,0.1)", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "inherit", color: "#16a34a" }}>
+  📲 Descargar APK
+</button>
         </div>
       </nav>
 
@@ -71,8 +75,11 @@ export default function LandingPage() {
           <button onClick={() => window.open("https://vivienda-ya.vercel.app/feed", "_blank")} style={{ padding: "16px 32px", borderRadius: 14, border: "1px solid rgba(0,0,0,0.12)", background: "#fff", color: "#0a0a0a", fontSize: 17, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>Ver propiedades</button>
           <button onClick={() => setShowInstall(true)} style={{ padding: "16px 32px", borderRadius: 14, border: "1px solid rgba(34,197,94,0.4)", background: "rgba(34,197,94,0.06)", color: "#16a34a", fontSize: 17, fontWeight: 700, cursor: "pointer", fontFamily: "inherit", display: "flex", alignItems: "center", gap: 8 }}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Instalar app
-          </button>
+           <button onClick={() => window.open("https://vivienda-ya.vercel.app/registro", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "1px solid rgba(34,197,94,0.4)", background: "transparent", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "inherit", color: "#16a34a" }}>🏠 ViviendaYa</button>
+<button onClick={() => window.open("https://rodadosya.vercel.app/registro", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "none", background: "#3B82F6", color: "#fff", fontSize: 14, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>🚗 RodadosYa</button> Instalar app
+          </button><button onClick={() => window.open("https://vivienda-ya.vercel.app/registro", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "1px solid rgba(34,197,94,0.4)", background: "transparent", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "inherit", color: "#16a34a" }}>🏠 ViviendaYa</button>
+<button onClick={() => window.open("https://rodadosya.vercel.app/registro", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "none", background: "#3B82F6", color: "#fff", fontSize: 14, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>🚗 RodadosYa</button>
+<button onClick={() => window.open("/ViviendaYa.apk", "_blank")} style={{ padding: "8px 18px", borderRadius: 20, border: "1px solid rgba(34,197,94,0.4)", background: "rgba(34,197,94,0.1)", fontSize: 14, fontWeight: 600, cursor: "pointer", fontFamily: "inherit", color: "#16a34a" }}>📲 Descargar APK</button>
         </div>
         <div style={{ width: 260, height: 520, borderRadius: 36, background: "#0a0a0a", boxShadow: "0 32px 80px rgba(0,0,0,0.2)", position: "relative", overflow: "hidden", border: "6px solid #1a1a1a" }}>
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, #111 0%, #000 100%)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", padding: 20 }}>
